@@ -1,5 +1,53 @@
 body 
     margin: 0
+nav
+    ul
+        li 
+            a 
+                text-transform: uppercase 
+                border-bottom: solid 1px gainsboro
+                border-top: solid 1px gainsboro
+            a:hover
+                background-color: rgb(196,45,64)
+
+.bright
+    filter: brightness(35%)
+    height: 850px
+    width: 100%
+h1
+    font-family: Courgette
+.margecenter
+    margin-bottom: 15%
+span:first-of-type, span:nth-of-type(3) ,span:last-of-type
+    font-size: 60px
+span:nth-of-type(2)
+    color: rgb(196,45,64)
+    font-size: 60px
+    text-transform: uppercase
+.btnbanner
+    font-size: 30px
+    text-transform: uppercase
+.deco
+    background-image: url("../images/bottom_decoration_img.png")
+    background-repeat: repeat-x
+    height: 10px
+    width: 100%
+    background-color: rgb(84,84,86)
+    margin-top: -5px
+
+@media (max-width:552px)
+    nav
+        position: sticky!important
+        background-color: black
+        a 
+            margin-left: -25px
+    .btnbanner2
+        margin-right: 18px
+@media (min-width:552px) and (max-width:768px)
+    nav
+        position: sticky!important
+        background-color: black
+                             
 
 @import "./_variables"
 @import "../../node_modules/bootstrap/scss/bootstrap.scss"
