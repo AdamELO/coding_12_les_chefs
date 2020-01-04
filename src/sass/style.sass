@@ -13,7 +13,7 @@ nav
             a:hover
                 background-color: rgb(196,45,64)
 .test
-    margin-left: 500px
+    margin-left: 500px!important
 /*banner*/
 #rond
     border-radius: 100%
@@ -71,15 +71,15 @@ h1
         position: absolute
         bottom: 0
         right: 0
-    h2
-        font-family: Courgette
-        span:first-of-type
-            text-transform: uppercase 
-            color: rgb(196,45,64)
-            font-size: 50px
-        span:last-of-type
-            text-transform: capitalize
-            font-size: 40px
+h2
+    font-family: Courgette
+    span:first-of-type
+        text-transform: uppercase 
+        color: rgb(196,45,64)
+        font-size: 50px
+    span:last-of-type
+        text-transform: capitalize
+        font-size: 40px
 .row1
     display: flex
     .col1
@@ -97,35 +97,41 @@ h1
     border-bottom: solid 1px gainsboro
     color: gainsboro
     margin: auto
-
     &:focus
         border-right: solid 8px rgb(196,45,64)
         color: rgb(196,45,64)!important
         outline: none
-.roundedimg
+.rond
     width: 110px
     height: 110px
     border-radius: 100%
     margin: 30px
     border: solid 4px gainsboro
+.point
+    border-bottom: dotted 2px gainsboro
 .dollars
     width: 35px
     height: 25px
     background-color: gainsboro
     color: rgb(196,45,64)
-    padding-left: 3px
-    margin: 60px 10px 10px 100px!important
-
-.point
-    border-bottom: dotted 2px gainsboro
-
-
+    padding-left: 3px   
+#lastbell
+    position: absolute
+    bottom: 10%
+    left: 33%
+/*section1 part2*/
+#bgteam
+    background-image: url("../images/team_background.jpg")
+    background-repeat: no-repeat
+    background-position: center
+    
 
 
 @media (max-width:552px)
+    body 
+        margin: 0
     nav
-        position: sticky!important
-        background-color: black
+        margin-bottom: 0px
         a 
             margin-left: -25px
     .btnbanner2
@@ -137,9 +143,8 @@ h1
             p 
                 margin: 10px 50px
 @media (min-width:552px) and (max-width:768px)
-    nav
-        position: sticky!important
-        background-color: black
+    body 
+        margin: 0
     .row1
         .col1
             h2 
@@ -147,6 +152,8 @@ h1
             p 
                 margin: 0
 @media (min-width:768px) and (max-width:1350px)
+    body 
+        margin: 0
     .row1
         .col1
             h2 
