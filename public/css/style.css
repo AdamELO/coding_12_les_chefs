@@ -1,13 +1,18 @@
 @charset "UTF-8";
 body {
-  margin: 0;
-  padding: 0;
+  margin: 0 !important;
+}
+
+.mzero {
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 /*navbar*/
 nav {
   position: absolute !important;
   z-index: 1;
+  width: 100%;
 }
 nav ul li a {
   text-transform: uppercase;
@@ -16,10 +21,6 @@ nav ul li a {
 }
 nav ul li a:hover {
   background-color: #c42d40;
-}
-
-.test {
-  margin-left: 500px !important;
 }
 
 /*banner*/
@@ -62,20 +63,17 @@ h1 span:nth-of-type(2) {
   height: 10px;
   width: 100%;
   background-color: #545456;
-  margin-top: -5px;
 }
 
 /*section1*/
 .bg {
   background-image: url("../images/main_bg.jpg");
   width: 100%;
-  height: 180vh;
   display: flex;
 }
 
 .carre {
   width: 80%;
-  height: 170vh;
   background-color: white;
   margin: auto;
   position: relative;
@@ -116,12 +114,14 @@ h2 span:last-of-type {
 
 .row1 {
   display: flex;
+  margin: 0 !important;
 }
 .row1 .col1 {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 0 !important;
 }
 .row1 .col1 p {
   margin: 50px 400px;
@@ -130,7 +130,7 @@ h2 span:last-of-type {
 /*collapse*/
 .carre2 {
   width: 80%;
-  height: 150px;
+  height: auto;
   border-right: solid 1px gainsboro;
   border-bottom: solid 1px gainsboro;
   color: gainsboro;
@@ -146,7 +146,6 @@ h2 span:last-of-type {
   width: 110px;
   height: 110px;
   border-radius: 100%;
-  margin: 30px;
   border: solid 4px gainsboro;
 }
 
@@ -162,17 +161,14 @@ h2 span:last-of-type {
   padding-left: 3px;
 }
 
-#lastbell {
-  position: absolute;
-  bottom: 10%;
-  left: 33%;
-}
-
 /*section1 part2*/
 #bgteam {
   background-image: url("../images/team_background.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-size: cover;
+}
+#bgteam .chef {
+  width: auto;
 }
 
 /*section2 form*/
@@ -207,11 +203,13 @@ h2 span:last-of-type {
 
 .row2 {
   display: flex;
+  margin: 0 !important;
 }
 .row2 .col2 {
   display: flex;
   flex-direction: column;
   flex-wrap: no-wrap;
+  margin: 0 !important;
 }
 .row2 .col2 p {
   margin: 0;
@@ -222,13 +220,13 @@ h2 span:last-of-type {
   background-image: url("../images/testimonials_background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100%;
 }
 
 /*contact*/
 .bg2 {
   background-image: url("../images/main_bg.jpg");
   width: 100%;
-  height: 130%;
 }
 
 .roundedred {
@@ -264,6 +262,11 @@ h2 span:last-of-type {
   border: solid 1px gainsboro !important;
 }
 
+/*fin*/
+#margright {
+  margin: 10px !important;
+}
+
 /*mediaquery*/
 @media (max-width: 552px) {
   body {
@@ -272,9 +275,6 @@ h2 span:last-of-type {
 
   nav {
     margin-bottom: 0px;
-  }
-  nav a {
-    margin-left: -25px;
   }
 
   .btnbanner2 {
@@ -285,7 +285,32 @@ h2 span:last-of-type {
     margin-top: 50px;
   }
   .row1 .col1 p {
-    margin: 10px 50px;
+    margin: 0;
+    padding: 40px;
+  }
+
+  h1 {
+    font-size: 10px;
+  }
+  h1 span:first-of-type, h1 span:nth-of-type(3), h1 span:last-of-type {
+    font-size: 20px;
+  }
+  h1 span:nth-of-type(2) {
+    font-size: 20px;
+  }
+
+  .btnbanner {
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+
+  .rond {
+    width: 50px;
+    height: 50px;
+  }
+
+  .overflowbreakfast {
+    overflow: auto;
   }
 }
 @media (min-width: 552px) and (max-width: 768px) {
@@ -299,6 +324,29 @@ h2 span:last-of-type {
   .row1 .col1 p {
     margin: 0;
   }
+
+  h1 {
+    font-size: 10px;
+  }
+  h1 span:first-of-type, h1 span:nth-of-type(3), h1 span:last-of-type {
+    font-size: 20px;
+  }
+  h1 span:nth-of-type(2) {
+    font-size: 20px;
+  }
+
+  .btnbanner {
+    font-size: 15px;
+  }
+
+  .rond {
+    width: 50px;
+    height: 50px;
+  }
+
+  .overflowbreakfast {
+    overflow: auto;
+  }
 }
 @media (min-width: 768px) and (max-width: 1350px) {
   body {
@@ -310,6 +358,20 @@ h2 span:last-of-type {
   }
   .row1 .col1 p {
     margin: 30px 200px;
+  }
+
+  .rond {
+    width: 50px;
+    height: 50px;
+  }
+
+  .overflowbreakfast {
+    overflow: auto;
+  }
+}
+@media (max-width: 992px) {
+  #margright {
+    margin: 0 !important;
   }
 }
 /*import*/        
