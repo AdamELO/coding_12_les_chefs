@@ -1,4 +1,7 @@
 @charset "UTF-8";
+/*variables*/ 
+/*remplacement de la police par Courgette ou par monospace*/
+/*extra*/
 body {
   margin: 0 !important;
 }
@@ -186,15 +189,12 @@ h2 span:last-of-type {
 
 /*section2part2*/ 
 .imginsta {
-  width: 60%;
-  height: 60%;
   border: solid 5px gainsboro;
   border-radius: 20px !important;
 }
 
 .absol {
-  position: absolute;
-  bottom: 30%;
+  margin-top: -35px !important;
 }
 
 .marginzero {
@@ -312,6 +312,18 @@ h2 span:last-of-type {
   .overflowbreakfast {
     overflow: auto;
   }
+
+  .wbell {
+    width: 100%;
+  }
+
+  .alignsm {
+    align-items: center;
+  }
+
+  .absol {
+    font-size: 10px;
+  }
 }
 @media (min-width: 552px) and (max-width: 768px) {
   body {
@@ -347,6 +359,19 @@ h2 span:last-of-type {
   .overflowbreakfast {
     overflow: auto;
   }
+
+  .wbell {
+    width: 100%;
+  }
+
+  .alignsm {
+    align-items: center;
+  }
+}
+@media (min-width: 774px) and (max-width: 990px) {
+  .alignsm {
+    align-items: center;
+  }
 }
 @media (min-width: 768px) and (max-width: 1350px) {
   body {
@@ -372,6 +397,24 @@ h2 span:last-of-type {
 @media (max-width: 992px) {
   #margright {
     margin: 0 !important;
+  }
+
+  .bottomfemme {
+    margin-bottom: 15px !important;
+  }
+
+  .topfemme {
+    margin-top: 15px !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1160px) {
+  #repnsmargftr {
+    margin-bottom: 15px !important;
+  }
+}
+@media (min-width: 761px) and (max-width: 962px) {
+  .absol {
+    margin-top: -50px !important;
   }
 }
 /*import*/        
